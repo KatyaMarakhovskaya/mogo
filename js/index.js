@@ -10,7 +10,25 @@ let gradient = document.querySelectorAll(".team-member_image-contaigner");
 // function showSocialNetworksInside(event){
 //   console.log(event.target.classlist)
 //   console.log("hhhhhhhhhhhhh")
-// }
+
+//console.log(document.documentElement.clientWidth)
+function resize(){
+        if(document.documentElement.clientWidth<1200)  {
+          console.log(document.documentElement.clientWidth)
+          document.querySelector(".work7").classList.add("none")
+          document.querySelector(".work7").classList.remove("gradient")
+
+        }else{
+          document.querySelector(".work7").classList.add("gradient")
+          document.querySelector(".work7").classList.remove("none")
+        }
+
+}
+
+window.onload = function (){
+  resize();
+}
+
 
 gradient.forEach(function(item) {
   item.addEventListener("mouseover", showSocialNetworks);

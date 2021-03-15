@@ -18,17 +18,35 @@
           <div class="logo_contaigner">
             <span class="logo">MoGo</span>
           </div>
-          <div class="menu_contaigner">
+
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" >
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li class="menu__item"><a href="#">about</a></li>
+              <li class="menu__item"><a href="#">service</a></li>
+              <li class="menu__item"><a href="#">work</a></li>
+              <li class="menu__item"><a href="#">blog</a></li>
+              <li class="menu__item"><a href="#">contact</a></li>
+              <li class="menu__item"><i class="fas fa-shopping-cart"></i></li>
+              <li class="menu__item"><i class="fas fa-search"></i></li>
+            </ul>
+          </div>
+
+          <div class="menu_contaigner navbar__menu layout">
             <ul class="menu layout">
-              <li>About</li>
-              <li>service</li>
-              <li>work</li>
-              <li>blog</li>
-              <li>contact</li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">service</a></li>
+              <li><a href="#">work</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
               <li><i class="fas fa-shopping-cart"></i></li>
               <li><i class="fas fa-search"></i></li>
             </ul>
           </div>
+
 
         </div>
         <h2>creative template</h2>
@@ -101,21 +119,21 @@
           <div class="row">
             <div class="one-service col-lg-4 layout">
               <img src="css/alarm.png" alt=""/>
-              <div>
+              <div class="one-service_txt">
                 <h4>Photography</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
               </div>
             </div>
             <div class="one-service col-lg-4 layout">
               <img src="css/line.png" alt=""/>
-              <div>
+              <div class="one-service_txt">
                 <h4>Web Design</h4>
                 <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
               </div>
             </div>
             <div class="one-service col-lg-4 layout">
               <img src="css/ok.png" alt=""/>
-              <div>
+              <div class="one-service_txt">
                 <h4>Creativity</h4>
                 <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
               </div>
@@ -125,21 +143,21 @@
 
             <div class="one-service col-lg-4 layout">
               <img src="css/book.png" alt=""/>
-              <div>
+              <div class="one-service_txt">
                 <h4>Seo</h4>
                 <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
               </div>
             </div>
             <div class="one-service col-lg-4 layout">
               <img src="css/home.png" alt=""/>
-              <div>
+              <div class="one-service_txt">
                 <h4>HTML/CSS</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
               </div>
             </div>
             <div class="one-service col-lg-4 layout">
               <img src="css/digital.png" alt=""/>
-              <div>
+              <div class="one-service_txt">
                 <h4>Digital</h4>
                 <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
               </div>
@@ -229,7 +247,7 @@
           <div class="carousel-inner">
 
             <div class="carousel-item active ">
-              <div class="carousel-item_content ">
+              <div class="carousel-item_content layout">
                 <div class="quote-image">
                   <img  src="css/quote.png" alt="Первый слайд">
                 </div>
@@ -245,7 +263,7 @@
           </div>
 
           <div class="carousel-item ">
-            <div class="carousel-item_content ">
+            <div class="carousel-item_content layout">
               <div class="quote-image">
                 <img  src="css/quote.png" alt="Второй слайд">
               </div>
@@ -261,7 +279,7 @@
             </div>
 
             <div class="carousel-item ">
-              <div class="carousel-item_content ">
+              <div class="carousel-item_content layout">
                 <div class="quote-image">
                   <img  src="css/quote.png" alt="Третий слайд">
                 </div>
@@ -298,7 +316,7 @@
         <h3><span>Meet our team</span></h3>
         <p class="short-description_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         <div class="row">
-          <div class="team-member col-4">
+          <div class="team-member col-lg-4 col-sm-12">
             <a href="#" class="team-member_image-contaigner gradient gradient-shadow man1 " data-network="first-team-member">
               <div class="social-networks_bar first-team-member none" >
                 <div class="social-network_item fab fa-facebook-f" data-network="first-team-member">
@@ -317,7 +335,7 @@
 
           </div>
 
-          <div class="team-member col-4">
+          <div class="team-member col-lg-4 col-sm-12">
 
             <a href="#" class="team-member_image-contaigner gradient gradient-shadow man2" data-network="second-team-member">
               <div class="social-networks_bar second-team-member none" >
@@ -336,7 +354,7 @@
             <span class="team-member_position">Branding/UX design</span>
           </div>
 
-          <div class="team-member col-4">
+          <div class="team-member col-lg-4 col-sm-12">
 
             <a href="#" class="team-member_image-contaigner gradient gradient-shadow man3" data-network="third-team-member">
               <div class="social-networks_bar third-team-member none">
@@ -412,7 +430,7 @@
           <div class="carousel-inner">
 
             <div class="carousel-item active ">
-              <div class="carousel-item_content ">
+              <div class="carousel-item_content  layout">
                 <div class="quote-image_contaigner">
                   <img  src="css/man`s-back.png" alt="Первый слайд">
                 </div>
@@ -428,7 +446,7 @@
           </div>
 
           <div class="carousel-item ">
-            <div class="carousel-item_content ">
+            <div class="carousel-item_content layout">
               <div class="quote-image_contaigner">
                 <img  src="css/man`s-back.png" alt="Второй слайд">
               </div>
@@ -444,7 +462,7 @@
             </div>
 
             <div class="carousel-item ">
-              <div class="carousel-item_content ">
+              <div class="carousel-item_content layout">
                 <div class="quote-image_contaigner">
                   <img  src="css/man`s-back.png" alt="Третий слайд">
                 </div>
@@ -457,7 +475,7 @@
                   </p>
                 </div>
               </div>
-              </div>
+            </div>
 
 
           </div>
@@ -678,7 +696,7 @@
       </div>
 
       <div class="confidetial-policy">
-        <span>© 2016 MoGo free PSD template by Laaqiq</span>
+        <span>Kyiv 2020</span>
       </div>
 
     </div>
