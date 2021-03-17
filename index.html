@@ -12,46 +12,51 @@
 
 </head>
 <body>
-    <div class="firstscreen">
+    <div class="overlay" onClick="menuToggler()" ></div>    <div class="firstscreen">
+
+
+
+
+
       <div class="contaigner">
         <div class="navbar layout">
           <div class="logo_contaigner">
             <span class="logo">MoGo</span>
           </div>
+          <div class="menu_contaigner">
+            <div class="hamburger-menu">
+              <button class="hamburger-menu-btn hamburger-menu-btn_open open" onClick="menuToggler()"><i class="fas fa-bars"></i></button>
+              <button class="hamburger-menu-btn hamburger-menu-btn_close none" onClick="menuToggler()"><i class="fas fa-times"></i></button>
 
-          <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" >
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-            <ul class="menu__box">
-              <li class="menu__item"><a href="#">about</a></li>
-              <li class="menu__item"><a href="#">service</a></li>
-              <li class="menu__item"><a href="#">work</a></li>
-              <li class="menu__item"><a href="#">blog</a></li>
-              <li class="menu__item"><a href="#">contact</a></li>
-              <li class="menu__item"><i class="fas fa-shopping-cart"></i></li>
-              <li class="menu__item"><i class="fas fa-search"></i></li>
-            </ul>
+              <ul class="menu__box none">
+                <li class="menu__item"><a href="#about" onClick="menuToggler()">about</a></li>
+                <li class="menu__item"><a href="#services" onClick="menuToggler()">services</a></li>
+                <li class="menu__item"><a href="#work" onClick="menuToggler()">work</a></li>
+                <li class="menu__item"><a href="#blog" onClick="menuToggler()">blog</a></li>
+                <li class="menu__item"><a href="#contacts" onClick="menuToggler()">contacts</a></li>
+                <li class="menu__item"><i class="fas fa-shopping-cart"></i></li>
+                <li class="menu__item"><i class="fas fa-search"></i></li>
+              </ul>
+            </div>
+
+
+            <div class="navbar__menu  layout container__fixed">
+              <ul class="navbar__menu_list menu layout">
+                <li><a href="#about" >about</a></li>
+                <li><a href="#services" >services</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contacts">contacts</a></li>
+                <li><i class="fas fa-shopping-cart"></i></li>
+                <li><i class="fas fa-search"></i></li>
           </div>
-
-          <div class="menu_contaigner navbar__menu layout">
-            <ul class="menu layout">
-              <li><a href="#">about</a></li>
-              <li><a href="#">service</a></li>
-              <li><a href="#">work</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">contact</a></li>
-              <li><i class="fas fa-shopping-cart"></i></li>
-              <li><i class="fas fa-search"></i></li>
-            </ul>
           </div>
-
 
         </div>
+    </div>
         <h2>creative template</h2>
         <h1>Welcome <br /> to MoGo</h1>
-        <a href="#" class="lern-more_btn">learn more</a>
+        <a href="#" class="lern-more_btn" >learn more</a>
         <div class="slider-firstscreen row ">
           <div class="col-lg-3 col-sm-12 item_slider-firstscreen"><span>01</span> intro </div>
           <div class="col-lg-3 col-sm-12 item_slider-firstscreen"><span>02</span> work </div>
@@ -63,7 +68,7 @@
 
     <div class="about-us">
       <div class="contaigner">
-          <h3><span>Story about us</span></h3>
+          <a id="about"></a><h3><span>Story about us</span></h3>
           <p class="short-description_paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
@@ -91,22 +96,22 @@
         <div class="item_statistic">
           <span class="number_item_statistic">123</span>
           <br/>
-          <span classs"number-description_item_statistic">happy client</span>
+          <span class="number-description_item_statistic">happy client</span>
         </div>
         <div class="item_statistic">
           <span class="number_item_statistic">15</span>
           <br/>
-          <span classs"number-description_item_statistic">award winner</span>
+          <span class="number-description_item_statistic">award winner</span>
         </div>
         <div class="item_statistic">
           <span class="number_item_statistic">99</span>
           <br/>
-          <span classs"number-description_item_statistic">cup of coffee</span>
+          <span class="number-description_item_statistic">cup of coffee</span>
         </div>
         <div class="item_statistic">
           <span class="number_item_statistic">24</span>
           <br/>
-          <span classs"number-description_item_statistic">members</span>
+          <span class="number-description_item_statistic">members</span>
         </div>
 
       </div>
@@ -114,7 +119,7 @@
 
     <div class="services">
       <div class="contaigner">
-          <h3><span>amazing servisces</span></h3>
+          <a id="services"></a><h3><span>amazing servisces</span></h3>
 
           <div class="row">
             <div class="one-service col-lg-4 layout">
@@ -404,7 +409,7 @@
 
     <div class="some-of-work">
       <div class="contaigner">
-        <h3><span>some of our work</span></h3>
+        <a id="work"></a><h3><span>some of our work</span></h3>
         <p class="short-description_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       </div>
       <div class="works_table-contaigner">
@@ -559,7 +564,7 @@
 
     <div class="stories">
       <div class="contaigner">
-        <h3><span>Latest blog</span></h3>
+      <a id="blog"></a><h3><span>Latest blog</span></h3>
 
 
       <div class="blogs_contaigner row">
@@ -640,7 +645,7 @@
       <div class="footer-content_contaigner  row ">
 
         <div class="shot-information col-lg-8">
-          <h2>MoGo</h2>
+          <a id="contacts"></a><h2>MoGo</h2>
           <p class="shot-information_description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
           </p>
@@ -696,16 +701,17 @@
       </div>
 
       <div class="confidetial-policy">
-        <span>Kyiv 2020</span>
+        <span>Kyiv 2020</span><br />
+        <span>katerinamarakhovskaya@gmail.com</span>
       </div>
 
     </div>
-
+  <button onClick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 </body>
   <!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 
   <script src="js/index.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </html>

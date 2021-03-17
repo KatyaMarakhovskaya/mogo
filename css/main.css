@@ -4,12 +4,24 @@
 /*font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;*/
+
+html {
+  scroll-behavior: smooth;
+
+}
 body {
   font-family: 'Roboto', sans-serif; }
 
 .contaigner {
   width: 1200px;
   margin: 0 auto; }
+
+
+  .header{
+    height: 1000px;
+    width: 100%;
+  }
+
 
 .layout {
   display: -webkit-box;
@@ -90,131 +102,168 @@ h3::after {
   left: 50%;
   z-index: 100; }
 
-/*HAMBURGER MENU*/
-.hamburger-menu {
-  display: none; }
 
-/* скрываем чекбокс */
-#menu__toggle {
-  opacity: 0; }
+      #myBtn {
+        display: none; /* Hidden by default */
+        /* Hidden by default */
+        position: fixed;
+        /* Fixed/sticky position */
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        right: 30px;
+        /* Place the button 30px from the right */
+        z-index: 4;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        background-color: #f38181;
+        /* Set a background color */
+        color: #fff;
+        /* Text color */
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        padding: 10px;
+        /* Some padding */
+        border-radius: 10px;
+        /* Rounded corners */
+        font-size: 14px;
+        /* Increase font size */
+        width: 40px;
+        height: 40px;
+      }
 
-/* стилизуем кнопку */
-.menu__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* используем flex для центрирования содержимого */
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* центрируем содержимое кнопки */
-  position: fixed;
-  top: 10px;
-  left: 20px;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  z-index: 1; }
+      #myBtn:hover {
+        -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+         }
 
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #ffe82a; }
 
-.menu__btn > span::before {
-  content: '';
-  top: -8px; }
+        /*HAMBURGER MENU*/
+        /* скрываем чекбокс */
+        #menu__toggle {
+          opacity: 0;
+        }
+        /* стилизуем кнопку */
+        .menu__btn {
+          display: flex; /* используем flex для центрирования содержимого */
+          align-items: center;  /* центрируем содержимое кнопки */
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          width: 26px;
+          height: 26px;
+          cursor: pointer;
+          z-index: 1002;
+        }
+        /* добавляем "гамбургер" */
+        .hamburger-menu{
+          display: none;
+        }
+        .hamburger-menu-btn{
+          background: none;
+          border: none;
+          color: #fdce38;
+          width: 26px;
+          height: 26px;
+          font-size: 28px;
+          position: fixed;
+          top: 10px;
+          left: 10px;
+          z-index: 1002;
 
-.menu__btn > span::after {
-  content: '';
-  top: 8px; }
+        }
 
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  text-align: center;
-  background-color: #f38181;
-  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  z-index: 5; }
 
-.menu__btn {
-  z-index: 6; }
 
-.menu__box li {
-  margin: 0; }
+      /*  .menu__box {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 300px;
+          height: 100vh;
+          margin: 0;
+          padding: 80px 0;
+          list-style: none;
+          background-color:#4699cf;
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          z-index: 1001;
+        }*/
 
-/* элементы меню */
-.menu__item {
-  display: block;
-  padding: 40px 24px;
-  color: #333;
-  font-size: 26px;
-  font-weight: 300;
-  text-decoration: none;
-  letter-spacing: 3px; }
+        .menu__box {
 
-.menu__item:hover {
-  background-color: #3f5971; }
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 80px 0;
+          text-align: center;
+          background-color: #f38181;
+          -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+          z-index: 5; }
 
-.menu__item a {
-  display: block; }
+        .menu__item a{
+          color: #fff !important;
+          font-size: 16px !important;
+        }
+        .menu__box li{
+          margin: 0;
+        }
+        /* элементы меню */
+        .menu__item {
+          display: block;
+          padding: 32px 24px;
+          font-size: 26px;
+          font-weight: 300;
+          text-decoration: none;
+          letter-spacing:3px;
+        }
 
-.menu__item a:hover {
-  color: #ffe82a !important; }
+        .menu__item a{
+          display: block;
 
-#menu__toggle:checked ~ .menu__btn > span {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
+        }
+        .menu__item a:hover {
+          color: #ffe82a !important;
+        }
 
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0); }
 
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg); }
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+          transition-duration: .25s;
+        }
 
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0; }
+        .menu__box {
+          transition-duration: .25s;
+        }
+        .menu__item {
+          transition-duration: .25s;
+        }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  -webkit-transition-duration: .25s;
-  -o-transition-duration: .25s;
-  transition-duration: .25s; }
+        .overlay{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index:99;
+            cursor: pointer;
+        }
 
-.menu__box {
-  -webkit-transition-duration: .25s;
-  -o-transition-duration: .25s;
-  transition-duration: .25s; }
+        .open{
+            display: block;
+        }
 
-.menu__item {
-  -webkit-transition-duration: .25s;
-  -o-transition-duration: .25s;
-  transition-duration: .25s; }
 
-/*-----------------*/
+
+
 /*---firstscreen----*/
 .firstscreen {
   height: 1000px;
@@ -229,7 +278,9 @@ h3::after {
   font-weight: bold; }
 
 .navbar {
-  padding: 0 !important; }
+  padding: 0 !important;
+  flex-wrap: nowrap !important;
+}
 
 .menu, .menu__box {
   font-family: "Montserrat", sans-serif;
@@ -520,25 +571,31 @@ h3::after {
 .collapse.show {
   border-top: 1px solid rgba(0, 0, 0, 0.125); }
 
+
+/*
 html, body {
   scrollbar-color: #95e1d3 #f5f5f5;
   /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: thin;
-  /* толщина */ }
+  /*scrollbar-width: thin;}*/
+  /*толщина */
 
+  /* ширина для вертикального скролла
 ::-webkit-scrollbar {
   width: 6px;
-  /* ширина для вертикального скролла */
   background-color: #f5f5f5; }
+*/
 
-/* ползунок скроллбара */
+
+/* ползунок скроллбара
 ::-webkit-scrollbar-thumb {
   background-color: #95e1d3;
   border-radius: 9em; }
-
-::-webkit-scrollbar-thumb:hover {
+*/
+/*::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: inset 1px 1px 10px #f3faf7;
   box-shadow: inset 1px 1px 10px #f3faf7; }
+*/
+
 
 .btn-link {
   font-family: "Montserrat", sans-serif;
@@ -760,7 +817,8 @@ html, body {
   background: url(work7.png); }
 
 .some-of-work .gradient:hover::before {
-  content: "creatively designed";
+  content: "creatively  designed";
+
   background: url(img-white.png) 0 0 no-repeat;
   background-position-y: 0px;
   background-position-x: 67px;
@@ -1054,7 +1112,17 @@ html, body {
   .works_table {
     width: 100%; } }
 
+
+@media screen and (max-width: 1300px) {
+  .some-of-work .gradient:hover::before {
+    left: 39%; }
+}
+
+
 @media screen and (max-width: 1200px) {
+  .social-networks_bar{
+    right: 38px;
+  }
   .contaigner {
     width: 960px; }
   .img_about-us {
@@ -1088,6 +1156,16 @@ html, body {
     width: 620px; } }
 
 @media screen and (max-width: 991px) {
+  .social-networks_bar {
+    top: 135px;
+    right: 158px;
+  }
+  .navbar__menu {
+   display: none; }
+
+  .hamburger-menu{
+    display: block;
+  }
   .contaigner {
     width: 766px;
     padding: 0 12; }
@@ -1099,10 +1177,7 @@ html, body {
     line-height: 100px; }
   .firstscreen h2 {
     margin: 80px auto 0; }
-  .navbar__menu {
-    display: none; }
-  .hamburger-menu {
-    display: block; }
+
   .logo_contaigner {
     margin: 20px auto 0; }
   .item_slider-firstscreen {
@@ -1178,6 +1253,8 @@ html, body {
     margin: 20px 40px; } }
 
 @media screen and (max-width: 767px) {
+  .some-of-work .gradient:hover::before {
+    content: "";}
   .contaigner {
     width: 480px;
     padding: 0 5px; }
@@ -1240,7 +1317,26 @@ html, body {
     margin-right: 0;
     margin-left: 0; } }
 
+@media screen and (max-width: 600px) {
+    .some-of-work .gradient:hover::before {
+    top: 53%;
+    left: 33%;
+  }
+}
+
 @media screen and (max-width: 480px) {
+  .some-of-work .gradient:hover::before {
+    background: none;
+  }
+  .team-member_image-contaigner {
+      position: relative;
+      height: 374px;
+      width: 380px;
+  }
+  .social-networks_bar {
+    top: 82px;
+    right: 108px;
+  }
   .contaigner {
     width: 320px;
     padding: 0 7px; }
