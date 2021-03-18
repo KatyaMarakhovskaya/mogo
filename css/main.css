@@ -66,8 +66,8 @@ h3::after {
   line-height: 0; }
 
 .gradient-shadow:hover {
-  -webkit-box-shadow: 1px 1px #95e1d3, 2px 2px #95e1d3, 3px 3px #95e1d3, 4px 4px #95e1d3, 5px 5px #95e1d3, 6px 6px #95e1d3, 7px 7px #95e1d3;
-  box-shadow: 1px 1px #95e1d3, 2px 2px #95e1d3, 3px 3px #95e1d3, 4px 4px #95e1d3, 5px 5px #95e1d3, 6px 6px #95e1d3, 7px 7px #95e1d3;
+  -webkit-box-shadow: 1px 1px #95e1d3, 2px 2px #95e1d3, 3px 3px #95e1d3, 4px 4px #95e1d3, 5px 5px #95e1d3, 6px 6px #95e1d3, 7px 7px #95e1d3;
+  box-shadow: 1px 1px #95e1d3, 2px 2px #95e1d3, 3px 3px #95e1d3, 4px 4px #95e1d3, 5px 5px #95e1d3, 6px 6px #95e1d3, 7px 7px #95e1d3;
   -webkit-transform: translateX(-7px);
   -ms-transform: translateX(-7px);
   transform: translateX(-7px); }
@@ -177,20 +177,6 @@ h3::after {
 
 
 
-      /*  .menu__box {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 300px;
-          height: 100vh;
-          margin: 0;
-          padding: 80px 0;
-          list-style: none;
-          background-color:#4699cf;
-          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-          z-index: 1001;
-        }*/
-
         .menu__box {
 
           position: fixed;
@@ -229,32 +215,6 @@ h3::after {
         }
         .menu__item a:hover {
           color: #ffe82a !important;
-        }
-
-
-        .menu__btn > span,
-        .menu__btn > span::before,
-        .menu__btn > span::after {
-          transition-duration: .25s;
-        }
-
-        .menu__box {
-          transition-duration: .25s;
-        }
-        .menu__item {
-          transition-duration: .25s;
-        }
-
-        .overlay{
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.5);
-            display: none;
-            z-index:99;
-            cursor: pointer;
         }
 
         .open{
