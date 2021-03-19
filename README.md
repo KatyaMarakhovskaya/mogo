@@ -1,2 +1,2 @@
 # mogo
-bootstrap template
+Landing page. I used html, css, bootstrap, jquery, js
